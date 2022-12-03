@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Список учеников</title>
+</head>
+<body>
+<h1>Список учеников</h1>
+{% for student in students: %}
+        <b>{{ student["name"] }} : </b>
+        <br>
+        <p>Группа {{ student["group"] }} </p>
+        <p>Средняя оценка {{ student["average_mark"] }} </p>
+{% endfor %}
+</body>
+</html>
